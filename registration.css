@@ -1,0 +1,13 @@
+h3{
+    text-align: center;
+}
+.button{
+    color:white;
+    background-color: blue;
+    border:none;
+    border-radius: 5px;
+    height: 35px;
+    width: 90px;
+    text-align: center;
+    margin: 2px;
+}

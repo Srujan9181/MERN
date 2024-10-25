@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            flexbox
+        </title>
+        <style>
+            .nav{
+                background-color: rgb(215,232,212);
+                width: 200px;
+                height: 100vh;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+            }
+            .hf{
+                background-color: #9acd32;
+                width: 100vh;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="nav">Nav</div>
+        <div class="article"></div>
+        <div class="hf">
+            <div>Header</div>
+            <div>Footer</div>
+        </div>        
+        <div class="aside"></div>
+    </body>
+</html>

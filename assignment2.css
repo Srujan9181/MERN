@@ -1,0 +1,19 @@
+img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.Name{
+    text-align: center;
+    color: blue;
+}
+#discription{
+    color:green;
+    text-align: center;
+}
+h3{
+    color:rgb(133, 5, 5);
+}
