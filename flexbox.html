@@ -5,35 +5,40 @@
             flexbox
         </title>
         <style>
-            .nav{
-                background-color: rgb(215,232,212);
-                width: 200px;
-                height: 100vh;
-                margin: 0;
+            .cointainer{
+                width: 50rem;
+                height: 50rem;
                 display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
+                
+            }
+            .cointainer div div{
+                height: 100%;
+               
+            }
+            .cointainer2{
+               width: 100%;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
 
             }
-            .hf{
-                background-color: #9acd32;
-                width: 100vh;
-                height: 100vh;
+            .cointainer3{
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                flex-wrap: wrap;
-            }
 
+            }
         </style>
     </head>
     <body>
-        <div class="nav">Nav</div>
-        <div class="article"></div>
-        <div class="hf">
-            <div>Header</div>
-            <div>Footer</div>
-        </div>        
-        <div class="aside"></div>
+        <div class="cointainer">
+            <div style="width: 30%;background-color:#d7e8d4">Nav</div>
+            <div class="cointainer2">
+                <div style="background-color: #9acd32;">Header</div>
+                <div class="cointainer3">
+                    <div style="width: 70%;">Article</div>
+                    <div style="width: 30%; background-color:rgb(245,245,220)">Aside</div>
+                </div>
+                <div style="background-color: #9acd32;">Footer</div>
+            </div>
+        </div>
     </body>
 </html>
