@@ -32,7 +32,7 @@ buttons.forEach(button => {
         yourselement.style.height="100px"
         yourselement.style.border="10px solid" 
         yourselement.style.borderRadius="50%"
-        yourselement.style.boxShadow=" 20px 20px 20px 20px #279b27";
+        
         yourselement.style.backgroundColor="white"
         document.getElementById("yourselementtitle").textContent = "You selected"
 
@@ -42,7 +42,7 @@ buttons.forEach(button => {
         computerselement.style.height="100px"
         computerselement.style.border="10px solid" 
         computerselement.style.borderRadius="50%"
-        computerselement.style.outline="10px solid #2E9A2563"
+        
         computerselement.style.backgroundColor="white"
         
         if(cchoice.id =="rayi"){
@@ -110,6 +110,7 @@ buttons.forEach(button => {
             (cchoice.id =="rayi" && e.target.id=="kattera") ||
             (cchoice.id =="kattera" && e.target.id=="paper") || 
             (cchoice.id =="paper" && e.target.id=="rock")){
+            computerselement.style.boxShadow="20px 20px 20px 20px #279b27"
 
             console.log("c win");
             compueterscore=document.getElementById("cscore")
@@ -131,6 +132,7 @@ buttons.forEach(button => {
             yscorei++
             localStorage.setItem("yscore",yscorei)
             yourscore.innerHTML = yscorei
+            yourselement.style.boxShadow=" 20px 20px 20px 20px #279b27";
         }
 
 })});
