@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            news api
+        </title>
+    </head>
+<body>
+    <button id="nes">nes</button>
+    <div id="main"></div>
+    <script>
+        button=document.getElementById("nes")
+        button.addEventListener("click",()=>{
+            data=fetch("https://newsapi.org/v2/everything?q=tesla&from=2024-11-08&sortBy=publishedAt&apiKey=0cd1e5d7646b4282b45cfbcea7e96fcd")
+            data.then((news)=>{
+               return news.json()
+            }).then((headlines)=>{
+                div=document.getElementById("main")
+                articles=headlines.articles;
+                articles.forEach((item)=>{
+                     div.innerHTML+=`<h1>${item.title} </h1>   <img src="${item.urlToImage}" height="150px" width="150px">`
+                    
+                })
+            })
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>joke api using promise</title>
+    </head>
+    <body>
+        <button id="api">Generate button</button>
+        <div id="main"></div>
+    </body>
+    <script>
+        button=document.getElementById("api");
+        button.addEventListener("click",function(){
+            var data=fetch("https://official-joke-api.appspot.com/random_joke")
+            data.then((resullt)=>{
+                return resullt.json()
+            }).then((joke)=>{
+                div=document.getElementById("main")
+                div.innerHTML=`<H1>SETUP : ${joke.setup}</H1>
+               <H1>PUCNLINE : ${joke.punchline}</H1> `
+            }).catch((error)=>{
+                document.getElementById("main").innerHTML=`<h5> pleaee check api url </h5>`
+            })
+        })
+    </script>
+</html>
