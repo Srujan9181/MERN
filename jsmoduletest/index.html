@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock  Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <div class="main">
+
+        <div id="rpstitle" style="text-align: center;box-sizing:border-box">
+            <div id="rtitle" style="font-size: 25px;">ROCK</div>
+            <div id="ptitle" style="font-size: 25px;">PAPER</div>
+            <div id="stitle" style="font-size: 25px;">SCISSORS</div>
+        </div>
+
+        <div id="ctitle" style="box-sizing:border-box">
+            <div style="text-align: center;font-size:small;color:#656565">COMPUTER</div>
+            <div style="text-align: center;font-size:small;color:#656565">SCORE</div>
+            <div id="cscore" style="text-align: center;font-size:50px">0</div>
+        </div>
+
+        <div id="ytitle" style="box-sizing:border-box">
+            <div style="text-align: center; font-size:small;color:#656565">YOUR</div>
+            <div style="text-align: center;font-size:small;color:#656565">SCORE</div>
+            <div id="yscore"style="text-align: center;font-size:50px">0</div>
+        </div>
+    
+    
+   </div>
+
+   <br>
+   <br>
+   <div class="buttons">
+
+
+   <!-- <button style="background-color: transparent;border:none">--><img src="./assets/1.png"  class="image" id="rayi"> <!--</button>-->
+    <img src="./assets/Line 1.png" id="top" class="lines">
+    <!-- <button style="background-color: transparent;border:none"> --> <img src="./assets/3.png"  class="image" id="paper"> <!-- </button> -->
+    <br>
+    <img src="./assets/Line 3.png" id="left" class="lines">
+    <img src="./assets/Line 2.png" id="right" class="lines">
+    
+    <br>
+    <!-- <button style="background-color: transparent;border:none"> --> <img src="./assets/2.png"  class="image" id="kattera"> <!-- </button> -->
+   </div>
+
+   <div class="selction" style="display: flex; justify-content:space-around">
+        <div>
+            <h1 id="computerselementtitle" ></h1><br>
+            <img src="" class="computerselement"  >
+        </div>
+        
+        <div>
+            <h1 id="yourselementtitle" ></h1>
+            <img src="" class="yourselement" >
+        </div>
+
+   </div>
+
+   <div id="refreshButton" > </div>
+
+
+
+<button id="rules">Rules</button>
+<button id="next">Next</button>
+   <script src="index.js"></script>
+</body>
+</html>
