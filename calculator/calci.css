@@ -49,7 +49,7 @@
 }
 #item{
     grid-area: item;
-    border: 2px solid yellow;
+    
     height: 50px;
 }
 #clear{
@@ -70,7 +70,7 @@
         "mul div eq"
         "clear clear clear";
     box-sizing: border-box;
-    border: 2px solid red;
+    
     height: fit-content;
     width: 300px;
     margin: auto auto;
