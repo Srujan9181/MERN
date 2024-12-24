@@ -49,31 +49,44 @@
 }
 #item{
     grid-area: item;
-    
-    height: 50px;
+    border: 2px solid black;
+    height: 70px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
 }
 #clear{
     grid-area: clear;
+    border-color: white;
+    color: white;
+    background-color: #39475f;
+    
+}
+#del{
+    grid-area:del;
+    background-color: #39475f;
+    border-color: white;
+    color: white;
 }
 
 .main{
     display: grid;
     grid-template-areas: 
-        "item item item"
-        "item item item"
-        "item item item"
-        "item item item"
-        "item1 item2 item3"
-        "item4 item5 item6"
-        "item7 item8 item9"
-        "item0 add sub"
-        "mul div eq"
-        "clear clear clear";
+        "item item item item"
+        "item item item item"
+        "item item item item"
+        "item item item item"
+        "item7 item8 item9 del"
+        "item4 item5 item6 sub"
+        "item1 item2 item3 add"
+        "item0 item0 div mul"
+        "eq eq clear clear";
     box-sizing: border-box;
     
     height: fit-content;
     width: 300px;
     margin: auto auto;
+    gap:0;
 
     
 }
@@ -81,8 +94,25 @@ div button{
     width: 100%;
     height: 70px;
     cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
 }
 
 p{
     font-size: 200%;
 }
+body{
+    background-color: #39475f;
+}
+#eq{
+    background-color: red;
+}
+.main{
+   border:4px solid black;
+   border-radius: 10px;
+   
+   
+}
+
