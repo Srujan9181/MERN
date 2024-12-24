@@ -17,3 +17,6 @@ function clearscr(){
 
 
 
+function remove(){
+    cscreen.innerHTML=cscreen.innerHTML.slice(0, -1);
+}
